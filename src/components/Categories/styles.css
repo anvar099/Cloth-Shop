@@ -1,0 +1,50 @@
+.categories-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid red;
+}
+
+.categories-row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid blue;
+}
+
+.category-item-above {
+  width: 30%;
+  height: 300px;
+  border: 2px solid black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.item-label {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1.5px solid black;
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: grey;
+  text-transform: uppercase;
+}
