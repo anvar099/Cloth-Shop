@@ -15,6 +15,7 @@
   justify-content: center;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 40px;
 }
 
 #logo {
@@ -29,6 +30,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-right: 2%;
 }
 
 .navbar-links, a {
@@ -37,6 +39,7 @@
   margin-left: 15px;
   color: black;
   text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #bag {

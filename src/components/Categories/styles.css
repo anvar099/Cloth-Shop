@@ -5,23 +5,22 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid red;
 }
 
-.categories-row {
+.categories-row { /* parent*/
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: 2px solid blue;
 }
 
-.category-item-above {
+
+.category-item-above1 { /* child*/
   width: 30%;
-  height: 300px;
-  border: 2px solid black;
+  height: 250px;
+  border: 1px solid black;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -29,10 +28,106 @@
   justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
+  background-image: url(../../assets/images/hats.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  
 }
 
+.category-item-above2 {
+  width: 30%;
+  height: 250px;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url(../../assets/images/jackets.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+.category-item-above3 {
+  width: 30%;
+  height: 250px;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url(../../assets/images/sneakers.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+@media(max-width: 760px){
+  .category-item-above1, .category-item-above2, .category-item-above3{
+    width: 30%;
+    height: 200px;
+  }
+}
+.category-item1{
+  width: 45.8%;
+  height: 380px;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-image: url(../../assets/images/womens.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+.category-item2{
+  width: 45.8%;
+  height: 380px;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-image: url(../../assets/images/mens.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+}
+@media(max-width: 1200px){
+  .category-item1, .category-item2{
+    width: 45.9%;
+  }
+}
+@media(max-width: 968px){
+  .category-item1, .category-item2{
+    width: 46.5%;
+    height: 250px;
+  }
+}
+@media(max-width: 760px){
+  .category-item1, .category-item2{
+    height: 220px;
+    width: 46.3%;
+  }
+}
 .item-label {
-  width: fit-content;
+  width: 80px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -40,11 +135,27 @@
   justify-content: center;
   background-color: white;
   border: 1.5px solid black;
+  opacity: 0.7;
+  padding: 8px 12px;
+}
+.item-label:hover{
+  opacity: 0.9;
 }
 
 .item-name {
   font-size: 18px;
   font-weight: 500;
-  color: grey;
+  color: rgb(41, 41, 41);
   text-transform: uppercase;
+  line-height: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.item-text {
+  font-size: 16px;
+  font-weight: 100;
+  color: rgb(117, 117, 117);
+  line-height: 10px;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: -0.8px;
 }
