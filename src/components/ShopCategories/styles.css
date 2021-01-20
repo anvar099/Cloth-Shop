@@ -1,0 +1,95 @@
+.shop-categories-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .shop-categories-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 500;
+  margin-left: 55px;
+  margin-bottom: 50px;
+  color: black;
+} */
+.shop-categories-row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.shop-categories-box {
+  width: 22%;
+  height: 350px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 80px;
+}
+
+@media(max-width: 768px){
+  .shop-categories-box{
+    width: 45%;
+  }
+}
+.shop-categories-bg-img:hover{
+  background-color: white;
+  opacity: 0.7;
+}
+.shop-categories-img{
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+.shop-categories-link{
+  display: none;
+  position: absolute;
+}
+.shop-categories-bg-img:hover .shop-categories-link{
+  display: block;
+  border: 1px solid black;
+  padding: 10px 60px;
+  background-color: white;
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: -0.5px;
+}
+.shop-categories-bg-img:hover .shop-categories-link:hover{
+  background-color: black;
+  color: white;
+}
+.shop-categories-btn {
+  margin-top: -65px;
+  display: flex;
+  justify-content: center;
+  margin-left: -4%;
+}
+.shop-categories-link{
+  border: 1px solid black;
+  padding: 10px 60px;
+  background-color: white;
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: -0.5px;
+}
+.shop-categories-brand-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 60px;
+}
