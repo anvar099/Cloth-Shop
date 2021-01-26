@@ -2,13 +2,14 @@ import React from 'react';
 import './styles.css';
 
 import Navbar from '../../components/Navbar'
-import ShopCategories from '../../components/ShopCategories'
+
+import CollectionOverview from "../../components/CollectionOverview"
 
 const ShopPage = () => {
   return (
     <div>
       <Navbar/>
-      <ShopCategories/>
+      <CollectionOverview/>
     </div>
     
   )

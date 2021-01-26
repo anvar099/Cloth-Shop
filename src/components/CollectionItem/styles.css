@@ -6,15 +6,20 @@
   margin-left: auto;
   margin-right: auto;
 }
-/* .shop-categories-title {
+
+.shop-categories-title-box{
+  position: absolute;
+  margin-top: -60px;
   font-size: 30px;
-  text-transform: uppercase;
+  font-weight: 110;
+  font-style: normal;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: 500;
-  margin-left: 55px;
-  margin-bottom: 50px;
-  color: black;
-} */
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+.shop-categories-title-box:hover{
+  opacity: 0.5;
+}
 .shop-categories-row {
   width: 100%;
   height: fit-content;
@@ -23,18 +28,18 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  
 }
 .shop-categories-box {
-  width: 22%;
+  width: 100%;
   height: 350px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 80px;
+  margin-top: 70px;
 }
 
 @media(max-width: 768px){
