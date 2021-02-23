@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './styles.css';
+import { NavbarContainer, LogoContent, NavbarLink} from './styles';
 
 
 import IconBag from '../../assets/icons/shopping-bag.png';
@@ -27,20 +27,20 @@ class Navbar extends React.Component {
 
   render(){
     return (
-      <div className="navbar-container">
-        <div className="logo-container">
-          <Link to="/"><img id="logo" src={Logo} alt="logo" /></Link>
-        </div>
-        <div className="navbar-links">
+      <NavbarContainer>
+        <LogoContent>
+          <Link to="/"><img src={Logo} alt="logo" /></Link>
+        </LogoContent>
+        <NavbarLink>
           <Link to="/shop">Shop</Link>
           <Link to="/contact">Contact</Link>
-          <a href="#">Sign in</a>
+          <Link to="/signup">SignUp</Link>
           <img onClick={this.handleClick} id="bag" src={IconBag} alt="bag" />
-        </div>
+        </NavbarLink>
         {
           this.state.show ? (<CardPopup/>) : null
         }
-      </div>
+      </NavbarContainer>
       
     )
   }

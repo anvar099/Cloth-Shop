@@ -1,44 +1,44 @@
 import React from 'react';
-import './styles.css';
+import { CategoriesContainer, CategoriesRow, CategoriesItem1, ItemLabel, ItemName, ItemText, CategoriesItem2 } from './styles'
 import data from '../../mock/collection';
 
 
 const Collection = () => {
   return (
-    <div className="categories-container">
-      <div className="categories-row">
+    <CategoriesContainer>
+      <CategoriesRow>
         {
           data.slice(0, 3)
           .map(({id, title, image}) => (
-            <div key={id} className="category-item-above1" style={{backgroundImage: `url(${image})`}}>
+            <CategoriesItem1 key={id} style={{backgroundImage: `url(${image})`}}>
              
-              <div className="item-label">
-                <h1 className="item-name">{title}</h1>
-                <h2 className="item-text">Shop Now</h2>
-              </div>
-            </div>
+             <ItemLabel>
+                <ItemName>{title}</ItemName>
+                <ItemText>Shop Now</ItemText>
+              </ItemLabel>
+            </CategoriesItem1>
           ))
         }
-      </div>
+      </CategoriesRow>
 
 
 
-      <div className="categories-row">
+      <CategoriesRow>
         {
           data.slice(3, 5)
           .map(({id, title, image}) => (
-            <div key={id} className="category-item1" style={{backgroundImage: `url(${image})`}}>
+            <CategoriesItem2 key={id}  style={{backgroundImage: `url(${image})`}}>
              
-              <div className="item-label">
-                <h1 className="item-name">{title}</h1>
-                <h2 className="item-text">Shop Now</h2>
-              </div>
-            </div>
+             <ItemLabel>
+                <ItemName>{title}</ItemName>
+                <ItemText>Shop Now</ItemText>
+              </ItemLabel>
+            </CategoriesItem2>
           ))
         }
         
-      </div>
-    </div>
+      </CategoriesRow>
+    </CategoriesContainer>
   )
 };
 

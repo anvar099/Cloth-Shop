@@ -1,4 +1,6 @@
-.button-primary {
+import styled from 'styled-components';
+
+export const ButtonPrimary = styled.div`
   min-width: 165px;
   width: auto;
   height: 50px;
@@ -16,9 +18,4 @@
   color: white;
   border: none;
   margin-top: 290px;
-}
-.button-primary:hover{
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-}
+`

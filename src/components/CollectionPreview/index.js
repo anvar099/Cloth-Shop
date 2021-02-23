@@ -1,19 +1,19 @@
 import React from 'react';
-import './styles.css'
+import { TitlePreview, PreviewContent } from './styles'
 import CollectionItem from "../CollectionItem"
 
 const CollectionPreview = ({ items, title }) => {
   return (
     <div>
-      <h1>{title}</h1>
-      <div className="collection-preview"> 
+      <TitlePreview>{title}</TitlePreview>
+      <PreviewContent> 
       {
         items.filter((item, idx) => idx < 4)
         .map(({id, ...otherProps}) =>(
           <CollectionItem key={id} {...otherProps}/>
         ))
       }
-      </div>
+      </PreviewContent>
     </div>
     
   )

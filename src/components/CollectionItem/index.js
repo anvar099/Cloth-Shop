@@ -1,33 +1,35 @@
 import React from 'react';
-import './styles.css'
+import { 
+  ShopCategoriesBox, 
+  ShopCategoriesBgImg, 
+  ShopCategoriesBtn, 
+  ShopCategoriesLink,
+  ShopCategoriesBrand,
+  ShopCategoriesName, 
+  ShopCategoriesPrice 
+} from './styles'
 
 const CollectionItem = ({name, price, img }) => {
 
   return (
-    
-    <div className="shop-categories-container">
-      <div className="shop-categories-row">
-        <div className="shop-categories-box">
-          <div className="shop-categories-bg-img">
-            <img src={img} alt="..." className="shop-categories-img" />
-            <div className="shop-categories-btn">
-              <a href="#" className="shop-categories-link">
+        <ShopCategoriesBox>
+          <ShopCategoriesBgImg>
+            <img src={img} alt="..." />
+            <ShopCategoriesBtn>
+              <ShopCategoriesLink>
                 ADD TO CART
-              </a>
-            </div>
-          </div>
-          
-          <div className="shop-categories-brand-name">
-            <div className="shop-categories-name">
+              </ShopCategoriesLink>
+            </ShopCategoriesBtn>
+          </ShopCategoriesBgImg>
+          <ShopCategoriesBrand>
+            <ShopCategoriesName>
               {name}
-            </div>
-            <div className="shop-categories-price">
+            </ShopCategoriesName>
+            <ShopCategoriesPrice>
               {price}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </ShopCategoriesPrice>
+          </ShopCategoriesBrand>
+        </ShopCategoriesBox>
   )
 };
 

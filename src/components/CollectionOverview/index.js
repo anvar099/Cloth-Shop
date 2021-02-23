@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import { CollectionContent } from './styles'
 
 import collection from '../../mock/collection'
 import CollectionPreview from '../../components/CollectionPreview'
@@ -7,13 +7,13 @@ import CollectionPreview from '../../components/CollectionPreview'
 
 const CollectionOverview = () => {
   return (
-    <div className="collection-overview">
+    <CollectionContent>
       {
         collection.map(({id, title, ...otherProps}) => (
           <CollectionPreview key={id} title={title} {...otherProps} />
         ))
       }
-    </div>
+    </CollectionContent>
   )
 }
 

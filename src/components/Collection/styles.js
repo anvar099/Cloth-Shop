@@ -1,23 +1,23 @@
+import styled from 'styled-components'
 
-.categories-container {
+export const CategoriesContainer = styled.div`
   width: 100vw;
   height: fit-content;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-}
-
-.categories-row { 
+`
+export const CategoriesRow = styled.div`
   width: 100%;
   height: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-}
+`
 
-.category-item-above1 { 
+export const CategoriesItem1 = styled.div`
   width: 30%;
   height: 250px;
   border: 1px solid black;
@@ -31,12 +31,11 @@
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 5s ease;
-}
-.category-item-above1:hover {
+  &:hover {
   background-size: 120%;
 }
-
-.category-item1{
+`
+export const CategoriesItem2 = styled.div`
   width: 46.2%;
   height: 380px;
   border: 1px solid black;
@@ -52,13 +51,11 @@
   background-repeat: no-repeat;
   background-size: 100%;
   transition: 5s ease;
- 
-}
-.category-item1:hover{
+  &:hover{
   background-size: 120%;
 }
-
-.item-label {
+`
+export const ItemLabel = styled.div`
   width: 80px;
   height: fit-content;
   display: flex;
@@ -70,20 +67,19 @@
   opacity: 0.7;
   padding: 8px 12px;
   position: absolute;
-}
-.item-label:hover{
+  &:hover{
   opacity: 0.9;
 }
-
-.item-name {
+`
+export const ItemName = styled.h1`
   font-size: 18px;
   font-weight: 500;
   color: rgb(41, 41, 41);
   text-transform: uppercase;
   line-height: 10px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.item-text {
+`
+export const ItemText =styled.h2`
   font-size: 16px;
   font-weight: 100;
   color: rgb(117, 117, 117);
@@ -91,4 +87,4 @@
   text-transform: uppercase;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: -0.8px;
-}
+`

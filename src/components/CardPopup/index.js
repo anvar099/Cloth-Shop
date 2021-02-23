@@ -1,15 +1,15 @@
 import React from 'react';
+import  { CardPopupContainer } from './styles'
 
-import './styles.css';
 import Buttons from '../Buttons'
 
 // class component
 class CardPopup extends React.Component {
   render() {
     return(
-      <div className="card-popup-container">
+      <CardPopupContainer>
         <Buttons>Go to checkout</Buttons>
-      </div>
+      </CardPopupContainer>
     )
   }
 }

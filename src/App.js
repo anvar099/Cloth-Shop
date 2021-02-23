@@ -5,6 +5,7 @@ import './App.css';
 import ShopPage from './pages/ShopPage';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
+import SignUpPage from './pages/SignUpPage';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/shop" component={ShopPage} />
         <Route exact path="/contact" component={ContactPage} />
+        <Route exact path="/signup" component={SignUpPage} />
       </Switch>,
       
     </div>

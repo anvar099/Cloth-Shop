@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './styles.css';
+import { ButtonPrimary } from './styles'
 
 const Buttons = () => {
   return(
-    <div className="button-primary">go to checkout</div>
+    <ButtonPrimary>go to checkout</ButtonPrimary>
   )
 }
 
