@@ -73,18 +73,18 @@ export const ItemLabel = styled.div`
 `
 export const ItemName = styled.h1`
   font-size: 18px;
-  font-weight: 500;
-  color: rgb(41, 41, 41);
+  font-weight: 700;
+  color: black;
   text-transform: uppercase;
   line-height: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Open Sans Condensed";
 `
 export const ItemText =styled.h2`
   font-size: 16px;
   font-weight: 100;
-  color: rgb(117, 117, 117);
+  color: black;
   line-height: 10px;
   text-transform: uppercase;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Open Sans Condensed";
   letter-spacing: -0.8px;
 `

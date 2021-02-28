@@ -32,9 +32,9 @@ class Navbar extends React.Component {
           <Link to="/"><img src={Logo} alt="logo" /></Link>
         </LogoContent>
         <NavbarLink>
-          <Link to="/shop">Shop</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/signup">SignUp</Link>
+          <Link to="/shop">SHOP</Link>
+          <Link to="/contact">CONTACT</Link>
+          <Link to="/signup">SIGN IN</Link>
           <img onClick={this.handleClick} id="bag" src={IconBag} alt="bag" />
         </NavbarLink>
         {

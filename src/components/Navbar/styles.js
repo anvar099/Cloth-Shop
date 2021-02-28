@@ -18,8 +18,14 @@ export const LogoContent = styled.div`
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 40px;
+  @media (max-width: 992px){
+    margin-left: 20px;
+  }
+  @media (max-width: 768px){
+    margin-left: 10px;
+  }
   img{
-    width: 40px;
+    width: 50px;
     height: auto;
     cursor: pointer;
     margin-left: 20px;
@@ -32,12 +38,12 @@ export const NavbarLink = styled.div`
   justify-content: center;
   margin-right: 2%;
   a{
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     margin-left: 15px;
     color: black;
     text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Open Sans Condensed";
   }
   img{
       width: 30px;
@@ -48,11 +54,10 @@ export const NavbarLink = styled.div`
 `
 
 export const Link = styled.a`
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   margin-left: 15px;
   color: black;
   text-decoration: none;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
+  font-family: "Open Sans Condensed";
 `

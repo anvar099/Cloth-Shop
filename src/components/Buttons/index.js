@@ -2,9 +2,9 @@ import React from 'react';
 
 import { ButtonPrimary } from './styles'
 
-const Buttons = () => {
+const Buttons = (props) => {
   return(
-    <ButtonPrimary>go to checkout</ButtonPrimary>
+    <ButtonPrimary {...props}></ButtonPrimary>
   )
 }
 

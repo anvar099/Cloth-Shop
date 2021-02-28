@@ -10,15 +10,17 @@ export const PreviewContent = styled.div`
   flex-wrap: wrap;
 `
 export const TitlePreview = styled.h1`
-  font-size: 30px;
-  font-weight: 110;
+  font-size: 28px;
+  font-weight: 700;
   font-style: normal;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  letter-spacing: -0.5px;
+  font-family: "Open Sans Condensed";
   text-transform: uppercase;
   margin-left: 45px;
   margin-top: 60px;
   &:hover{
     opacity: 0.6;
+  }
+  @media (max-width: 992px){
+    text-align: center;
   }
 `
