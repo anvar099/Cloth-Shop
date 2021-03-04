@@ -1,9 +1,31 @@
-import React from 'react';
-import { CategoriesContainer, CategoriesRow, CategoriesItem1, ItemLabel, ItemName, ItemText, CategoriesItem2 } from './styles'
-import data from '../../mock/collection';
+import React, { useState, useEffect } from "react";
+import { 
+  CategoriesContainer, 
+  CategoriesRow, 
+  CategoriesItem1, 
+  ItemLabel, 
+  ItemName, 
+  ItemText, 
+  CategoriesItem2 
+} from './styles'
+
 
 
 const Collection = () => {
+
+  const [data, setData] = useState([]); // state, setState
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch('https://abubakr.vakhid.digital/portfolio/fake-api.php');
+      const json = await response.json();
+      setData(json)
+    }
+    fetchData()
+  }, [])
+  console.log(data, "collection.data")
+
+
   return (
     <CategoriesContainer>
       <CategoriesRow>

@@ -28,12 +28,7 @@ export default [
         name: "Nike White AirForce",
         price: "$50"
       }
-      // {
-      //   id: 5,
-      //   img: 'https://hosty.xxx/i/9a7b25c70aae609ab4381e44fdca780b7bc1faa4.jpg',
-      //   name: "hats",
-      //   price: "$50"
-      // }
+      
     ]
   },
   {
@@ -65,12 +60,7 @@ export default [
         name: "Brown Shearling",
         price: "$50"
       }
-      // {
-      //   id: 5,
-      //   img: 'https://hosty.xxx/i/9a7b25c70aae609ab4381e44fdca780b7bc1faa4.jpg',
-      //   name: "jackets",
-      //   price: "$50"
-      // }
+    
     ]
   },
   {
@@ -102,12 +92,7 @@ export default [
         name: "Grey Brim",
         price: "$50"
       }
-      // {
-      //   id: 5,
-      //   img: 'https://hosty.xxx/i/9a7b25c70aae609ab4381e44fdca780b7bc1faa4.jpg',
-      //   name: "hats",
-      //   price: "$50"
-      // }
+
     ]
   },
   {
@@ -139,12 +124,7 @@ export default [
         name: "Pink T-shirt",
         price: "$50"
       }
-      // {
-      //   id: 5,
-      //   img: 'https://hosty.xxx/i/9a7b25c70aae609ab4381e44fdca780b7bc1faa4.jpg',
-      //   name: "hats",
-      //   price: "$50"
-      // }
+      
     ]
   },
   {
@@ -176,12 +156,7 @@ export default [
         name: "Red Dots Dress",
         price: "$50"
       }
-      // {
-      //   id: 5,
-      //   img: 'https://hosty.xxx/i/9a7b25c70aae609ab4381e44fdca780b7bc1faa4.jpg',
-      //   name: "hats",
-      //   price: "$50"
-      // }
+      
     ]
   }
 ]

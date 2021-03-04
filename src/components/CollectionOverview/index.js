@@ -1,15 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import { CollectionContent } from './styles'
 
-import collection from '../../mock/collection'
+
 import CollectionPreview from '../../components/CollectionPreview'
 
 
+  
+
+
 const CollectionOverview = () => {
+
+  const [data, setData] = useState([]); // state, setState
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch('https://abubakr.vakhid.digital/portfolio/fake-api.php');
+      const json = await response.json();
+      setData(json)
+    }
+    fetchData()
+  }, [])
+
+
+
+  // fetch('https://abubakr.vakhid.digital/portfolio/fake-api.php')
+  // .then((response) => {
+  //   return response.json();
+  // })
+  // .then((data) => {
+  //   console.log(data);
+  // });
+
   return (
     <CollectionContent>
       {
-        collection.map(({id, title, ...otherProps}) => (
+        data.map(({id, title, ...otherProps}) => (
           <CollectionPreview key={id} title={title} {...otherProps} />
         ))
       }
